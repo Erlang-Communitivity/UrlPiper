@@ -1,0 +1,15 @@
+{application, urlpiper,
+ [{description, "URLPiper"},
+  {vsn, "1"},
+  {modules, [
+  	    urlpiper_app,
+	    urlpiper_sup,
+	    urlpiper_worker_rootsup,
+	    urlpiper_worker_sup,
+	    urlpiper_worker,
+	    urlpiper
+	    ]},
+  {registered, [urlpiper_sup, urlpiper, urlpiper_worker_rootsup, urlpiper_worker_sup]},
+  {applications, [kernel, stdlib, sasl,inets,ssl]},
+  {mod, {urlpiper_app,[]}}
+ ]}.

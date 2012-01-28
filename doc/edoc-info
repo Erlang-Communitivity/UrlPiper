@@ -1,0 +1,4 @@
+{application,urlpiper}.
+{packages,[]}.
+{modules,[urlpiper,urlpiper_app,urlpiper_sup,urlpiper_worker,
+          urlpiper_worker_rootsup,urlpiper_worker_sup]}.
